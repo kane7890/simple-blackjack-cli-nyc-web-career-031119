@@ -29,11 +29,19 @@ def end_game (card_total)
 end
 
 def initial_round
+  sum = deal_card + deal_card
+  display_card_total (sum)
+  return(sum)
   # code #initial_round here
   
 end
 
-def hit?
+def hit? (card_total)
+  prompt_user
+  user_input = get_user_input
+  if (user_input == "h") 
+    card_total = card_total + deal_card
+  elsif (user_input != "h" )
   # code hit? here
 end
 
