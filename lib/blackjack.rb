@@ -64,6 +64,7 @@ def runner
   puts "card_total = #{card_total}"
   until card_total > 21
     card_total = hit?(card_total)
+    display_card_total(card_total)
   end
   # code runner here
 end
