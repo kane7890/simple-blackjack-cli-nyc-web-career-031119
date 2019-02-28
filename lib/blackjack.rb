@@ -59,6 +59,9 @@ end
 #####################################################
 
 def runner
+  Welcome
+  initial_round
+  
   # code runner here
 end
     
